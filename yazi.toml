@@ -2,6 +2,8 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
+# {{{ manager
+
 [manager]
 ratio          = [ 2, 4, 3 ]
 sort_by        = "alphabetical"
@@ -28,6 +30,10 @@ image_quality   = 75
 sixel_fraction  = 15
 ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
+
+# }}} manager
+
+# {{{ opener
 
 [opener]
 edit = [
@@ -56,6 +62,20 @@ play = [
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
 
+# macOS 独有的设置
+player_video_thunder_mac = [
+    { run = 'open -a "/Applications/XLPlayer.app" "$@"', orphan = true, for = "unix" }
+]
+
+# Linux 独有的设置
+player_video_default_linux = [
+    { run = 'vlc "$@"', orphan = true, for = "unix" }
+]
+
+# }}} opener
+
+# {{{ open
+
 [open]
 rules = [
 	# Folder
@@ -77,6 +97,19 @@ rules = [
 	{ name = "*", use = [ "open", "reveal" ] },
 ]
 
+prepend_rules = [
+    # .mp4 和 .mkv 的 macOS 规则
+    { name = "*.mp4", use = "player_video_thunder_mac", for = "unix" },
+    { name = "*.mkv", use = "player_video_thunder_mac", for = "unix" },
+
+    # .mp4 和 .mkv 的 Linux 规则（如果需要）
+    { name = "*.mp4", use = "player_video_default_linux", for = "unix" },
+    { name = "*.mkv", use = "player_video_default_linux", for = "unix" }
+]
+# }}} open
+
+# {{{ tasks
+
 [tasks]
 micro_workers    = 10
 macro_workers    = 10
@@ -84,6 +117,10 @@ bizarre_retry    = 3
 image_alloc      = 536870912  # 512MB
 image_bound      = [ 0, 0 ]
 suppress_preload = false
+
+# }}} tasks
+
+# {{{ plugin
 
 [plugin]
 
@@ -224,10 +261,18 @@ sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
 
+# }}} plugin
+
+# {{{ bunny.yazi
+
 [[manager.prepend_keymap]]
 desc = "Start bunny.yazi"
 on = "'"
 run = "plugin bunny"
+
+# }}} bunny.yazi
+
+# {{{ lazygit
 
 [[plugin.prepend_fetchers]]
 id   = "git"
@@ -238,3 +283,5 @@ run  = "git"
 id   = "git"
 name = "*/"
 run  = "git"
+
+# }}} lazygit
