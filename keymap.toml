@@ -540,7 +540,7 @@ desc = "Maximize or restore preview"
 # {{{ what-size
 
 [[manager.prepend_keymap]]
-on   = [ ".", "s" ]
+on   = [ ",", "s" ]
 run  = "plugin what-size"
 desc = "Calc size of selection or cwd"
 
