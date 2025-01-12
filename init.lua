@@ -58,9 +58,9 @@ require("copy-file-contents"):setup({
 	notification = true,
 })
 require("git"):setup()
-if os.getenv("NVIM") then
-	require("hide-preview"):entry()
-end
+-- if os.getenv("NVIM") then
+-- 	require("hide-preview"):entry()
+-- end
 require("restore"):setup({
 	-- Set the position for confirm and overwrite dialogs.
 	-- don't forget to set height: `h = xx`
