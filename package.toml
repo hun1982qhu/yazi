@@ -1,5 +1,104 @@
-[plugin]
-deps = [{ use = "dedukun/bookmarks", rev = "20ece7e" }, { use = "AnirudhG07/rich-preview", rev = "8be4d27" }, { use = "Ape/open-with-cmd", rev = "a80d1cf" }, { use = "yazi-rs/plugins:full-border", rev = "c7feb90" }, { use = "stelcodes/bunny", rev = "49bd059" }, { use = "yazi-rs/plugins:chmod", rev = "c7feb90" }, { use = "Reledia/glow", rev = "c2ed51e" }, { use = "GrzegorzKozub/mdcat", rev = "d3d5089" }, { use = "Lil-Dank/lazygit", rev = "c82794f" }, { use = "AnirudhG07/plugins-yazi:copy-file-contents", rev = "11167e1" }, { use = "yazi-rs/plugins:git", rev = "71c4fc2" }, { use = "yazi-rs/plugins:hide-preview", rev = "71c4fc2" }, { use = "yazi-rs/plugins:max-preview", rev = "71c4fc2" }, { use = "pirafrank/what-size", rev = "6791caa" }, { use = "dawsers/dual-pane", rev = "c2fed12" }, { use = "boydaihungst/restore", rev = "ffc209e" }]
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "8be4d27"
+hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
 
-[flavor]
-deps = [{ use = "PinThePenguine/sunset", rev = "181acd4" }, { use = "yazi-rs/flavors:catppuccin-mocha", rev = "8458d25" }, { use = "yazi-rs/flavors:catppuccin-frappe", rev = "8458d25" }]
+[[plugin.deps]]
+use = "Ape/open-with-cmd"
+rev = "a80d1cf"
+hash = "86e0312b01bc5762813c6c1d0517f073"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "c7feb90"
+hash = "a61bb2d21a08bf1d18f0a549e5eb1475"
+
+[[plugin.deps]]
+use = "stelcodes/bunny"
+rev = "49bd059"
+hash = "2adf8bfe95004e63da0201dc0c2f365"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "c7feb90"
+hash = "36c82bb433078e8e752351d961cac777"
+
+[[plugin.deps]]
+use = "Reledia/glow"
+rev = "c2ed51e"
+hash = "136ce00885041aeee5cf582ccf7a46dc"
+
+[[plugin.deps]]
+use = "GrzegorzKozub/mdcat"
+rev = "d3d5089"
+hash = "40c20e6c1085d1f45309b9f148bf4f6e"
+
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "c82794f"
+hash = "2b0c33928986f126d5c5a4cac31a6b46"
+
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "11167e1"
+hash = "27c50e6bc15c09096505b805b238ade0"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:hide-preview"
+rev = "71c4fc2"
+hash = "5be5885898ca9df783bdec0d402bf4b0"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "71c4fc2"
+hash = "9bc26d10d2f6e2aa93b10905b1b76979"
+
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "6791caa"
+hash = "a75c369673d274371c665c431ab02dc0"
+
+[[plugin.deps]]
+use = "dawsers/dual-pane"
+rev = "c2fed12"
+hash = "c7c303f806f5bbbdc863f22956876551"
+
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "89fddfd"
+hash = "b442aa672e07ec0765b4b00e7bfdc9b5"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "beb586a"
+hash = "771f18427fb75fb19990ce602bb322f4"
+
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "202e450"
+hash = "9e2f6f7381542d3adb3080b394b431b4"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "3f7c51f"
+hash = "e11b980e5635f0fbabd80931b1a1347e"
+
+[[plugin.deps]]
+use = "iynaix/time-travel"
+rev = "7e0179e"
+hash = "69967963fba96295a07b68354fc91ea9"
+
+[[flavor.deps]]
+use = "PinThePenguine/sunset"
+rev = "181acd4"
+hash = "cc4c39af7098f02c42fec223fc1fc967"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "8458d25"
+hash = "44ab3265147788a4e780b2060341d65e"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "8458d25"
+hash = "4ac6d107876dae72ee51f3eaece95ffc"

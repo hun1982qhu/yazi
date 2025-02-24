@@ -1,0 +1,12 @@
+编程语言-shell-综合	/home/huangning/Documents/CTA/01-编程语言/05-Shell/01-综合文档/08-rsync和scp的区别.md	1
+环境配置-应用安装	/home/huangning/Documents/CTA/10-操作系统/01-ubuntu/03-脚本文件/07-环境配置/03-install_package/13-install_lua.sh	l
+数据管理综合文档-数据备份	/home/huangning/Documents/CTA/03-数据管理/01-MongoDB/01-综合文档/03-数据备份/01-不同mongodb复制集之间数据迁移.md	m
+数据库管理脚本-设计文档	/home/huangning/Documents/CTA/10-操作系统/01-ubuntu/02-脚本设计/01-mongodb管理/06-数据迁移/03-数据备份与恢复脚本设计文档.md	S
+yazi.toml	/home/huangning/.config/yazi/yazi.toml	y
+yazi	/home/huangning/.config/yazi/	Y
+stack	/home/huangning/Documents/mongodb/stack/	0
+mstack配置文件	/home/huangning/Documents/CTA/10-操作系统/01-ubuntu/03-脚本文件/01-数据管理/配置文件/stack/yaml/mongodb_repl_fractal_docker_stack.yaml	c
+mongodb管理脚本备份文件	/home/huangning/Documents/CTA/10-操作系统/01-ubuntu/03-脚本文件/01-数据管理/备份文件/执行文件/01-mongodb_repl_manage/01-mongodb_repl_manage01.sh	b
+Desktop	/home/huangning/Desktop/	d
+15-单节点强制启动swarm.md	/home/huangning/Documents/CTA/06-程序部署/01-docker/01-综合文档/04-docker_swarm/15-单节点强制启动swarm.md	D
+04-mongodb_swarm_manage.sh	/home/huangning/Documents/CTA/10-操作系统/01-ubuntu/03-脚本文件/01-数据管理/执行文件/04-mongodb_swarm_manage.sh	s
