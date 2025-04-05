@@ -551,7 +551,7 @@ desc = "Calc size of selection or cwd"
 # {{{ yamb -> Yet Another MarkBook
 
 [[manager.prepend_keymap]]
-on = [ "u", "s" ]
+on = [ "u", "a" ]
 run = "plugin yamb save"
 desc = "Add bookmark"
 
@@ -576,7 +576,7 @@ run = "plugin yamb delete_by_key"
 desc = "Delete bookmark by key"
 
 [[manager.prepend_keymap]]
-on = [ "u", "a" ]
+on = [ "u", "A" ]
 run = "plugin yamb delete_all"
 desc = "Delete all bookmarks"
 
