@@ -78,7 +78,7 @@ require("restore"):setup({
 		list_item = { odd = "blue", even = "blue" },
 	},
 })
-require("dual-pane"):setup()
+-- require("dual-pane"):setup()
 -- You can configure your bookmarks by lua language
 local bookmarks = {}
 

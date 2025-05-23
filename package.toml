@@ -1,87 +1,67 @@
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "8be4d27"
-hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
+rev = "fdcf373"
+hash = "bd1737dd44b202f412122e6a3b378d4c"
 
 [[plugin.deps]]
 use = "Ape/open-with-cmd"
-rev = "a80d1cf"
+rev = "433cf30"
 hash = "86e0312b01bc5762813c6c1d0517f073"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "c7feb90"
-hash = "a61bb2d21a08bf1d18f0a549e5eb1475"
+rev = "55bf699"
+hash = "1f3dad061209081a6b04dd6ff2cb06c7"
 
 [[plugin.deps]]
 use = "stelcodes/bunny"
-rev = "49bd059"
-hash = "2adf8bfe95004e63da0201dc0c2f365"
+rev = "ea27f37"
+hash = "7956295208401cdbdf2b673b73437edd"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "c7feb90"
-hash = "36c82bb433078e8e752351d961cac777"
+rev = "55bf699"
+hash = "2f1053f89d1a301a648ab181d0948e38"
 
 [[plugin.deps]]
 use = "Reledia/glow"
-rev = "c2ed51e"
-hash = "136ce00885041aeee5cf582ccf7a46dc"
+rev = "2da96e3"
+hash = "f9ee1436e3b853508d87f7d49dce56e6"
 
 [[plugin.deps]]
 use = "GrzegorzKozub/mdcat"
-rev = "d3d5089"
+rev = "7b7380a"
 hash = "40c20e6c1085d1f45309b9f148bf4f6e"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
-rev = "c82794f"
-hash = "2b0c33928986f126d5c5a4cac31a6b46"
+rev = "7a08a09"
+hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [[plugin.deps]]
 use = "AnirudhG07/plugins-yazi:copy-file-contents"
-rev = "11167e1"
+rev = "524c52c"
 hash = "27c50e6bc15c09096505b805b238ade0"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:hide-preview"
-rev = "71c4fc2"
-hash = "5be5885898ca9df783bdec0d402bf4b0"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:max-preview"
-rev = "71c4fc2"
-hash = "9bc26d10d2f6e2aa93b10905b1b76979"
-
-[[plugin.deps]]
-use = "pirafrank/what-size"
-rev = "6791caa"
-hash = "a75c369673d274371c665c431ab02dc0"
-
-[[plugin.deps]]
-use = "dawsers/dual-pane"
-rev = "c2fed12"
-hash = "c7c303f806f5bbbdc863f22956876551"
-
-[[plugin.deps]]
 use = "boydaihungst/restore"
-rev = "89fddfd"
-hash = "b442aa672e07ec0765b4b00e7bfdc9b5"
+rev = "1bfd5f7"
+hash = "f61cea367316f9459590f5c1dc4fc"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "beb586a"
-hash = "771f18427fb75fb19990ce602bb322f4"
+rev = "55bf699"
+hash = "e0ada736ea676c2bbb3ec705a49526ef"
 
 [[plugin.deps]]
 use = "dedukun/bookmarks"
-rev = "202e450"
-hash = "9e2f6f7381542d3adb3080b394b431b4"
+rev = "fbb7c00"
+hash = "1d231a808d3344546380df33daf43e91"
 
 [[plugin.deps]]
 use = "h-hg/yamb"
-rev = "3f7c51f"
-hash = "e11b980e5635f0fbabd80931b1a1347e"
+rev = "22af003"
+hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
 use = "iynaix/time-travel"
@@ -89,16 +69,6 @@ rev = "7e0179e"
 hash = "69967963fba96295a07b68354fc91ea9"
 
 [[flavor.deps]]
-use = "PinThePenguine/sunset"
-rev = "181acd4"
-hash = "cc4c39af7098f02c42fec223fc1fc967"
-
-[[flavor.deps]]
-use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "8458d25"
-hash = "44ab3265147788a4e780b2060341d65e"
-
-[[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"
-rev = "8458d25"
-hash = "4ac6d107876dae72ee51f3eaece95ffc"
+rev = "02f3fc6"
+hash = "7780fbbc8965da5a31a76a0dcd4d1216"

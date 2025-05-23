@@ -78,6 +78,17 @@ player_video_default_linux = [
 
 [open]
 rules = [
+  # Python
+  { name = "*.py", use = [ "edit", "reveal" ] },
+
+  # C/C++
+  { name = "*.c", use = [ "edit", "reveal" ] },
+  { name = "*.cpp", use = [ "edit", "reveal" ] },
+  { name = "*.h", use = [ "edit", "reveal" ] },
+  { name = "*.hpp", use = [ "edit", "reveal" ] },
+
+  # Lua
+  { name = "*.lua", use = [ "edit", "reveal" ] },
 	# Folder
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
