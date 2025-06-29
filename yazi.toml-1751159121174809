@@ -4,7 +4,7 @@
 
 # {{{ manager
 
-[mgr]
+[manager]
 ratio          = [ 2, 4, 3 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
@@ -276,7 +276,7 @@ sort_translit  = false
 
 # {{{ bunny.yazi
 
-[[mgr.prepend_keymap]]
+[[manager.prepend_keymap]]
 desc = "Start bunny.yazi"
 on = "'"
 run = "plugin bunny"
