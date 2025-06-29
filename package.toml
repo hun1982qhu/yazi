@@ -64,9 +64,9 @@ rev = "22af003"
 hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
-use = "iynaix/time-travel"
-rev = "7e0179e"
-hash = "69967963fba96295a07b68354fc91ea9"
+use = "yazi-rs/plugins:toggle-pane"
+rev = "55bf699"
+hash = "f3853bbdd1da2fad09d059ab5464abfd"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"
