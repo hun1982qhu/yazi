@@ -34,11 +34,6 @@ rev = "7b7380a"
 hash = "40c20e6c1085d1f45309b9f148bf4f6e"
 
 [[plugin.deps]]
-use = "Lil-Dank/lazygit"
-rev = "7a08a09"
-hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
-
-[[plugin.deps]]
 use = "AnirudhG07/plugins-yazi:copy-file-contents"
 rev = "524c52c"
 hash = "27c50e6bc15c09096505b805b238ade0"
@@ -59,14 +54,14 @@ rev = "fbb7c00"
 hash = "1d231a808d3344546380df33daf43e91"
 
 [[plugin.deps]]
-use = "h-hg/yamb"
-rev = "22af003"
-hash = "7cc42012a7c2099f80064d228feb8d44"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
 rev = "55bf699"
 hash = "f3853bbdd1da2fad09d059ab5464abfd"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "22af003"
+hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"

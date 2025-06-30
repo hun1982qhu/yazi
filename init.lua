@@ -1,4 +1,23 @@
--- ~/.config/yazi/init.lua
+-- ## {{{ Linemode:size_and_mtime()函数
+
+function Linemode:size_and_mtime()
+	local time = math.floor(self._file.cha.mtime or 0)
+	if time == 0 then
+		time = ""
+	elseif os.date("%Y", time) == os.date("%Y") then
+		time = os.date("%b %d %H:%M", time)
+	else
+		time = os.date("%b %d  %Y", time)
+	end
+
+	local size = self._file:size()
+	return string.format("%s %s", size and ya.readable_size(size) or "-", time)
+end
+
+-- ## }}} Linemode:size_and_mtime()函数
+
+-- ## {{{ bookmarks
+
 require("bookmarks"):setup({
 	last_directory = { enable = false, persist = false },
 	persist = "none",
@@ -15,10 +34,18 @@ require("bookmarks"):setup({
 	},
 })
 
+-- ## }}} bookmarks
+
+-- ## {{{ full_border
+
 require("full-border"):setup({
 	-- Available values: ui.Border.PLAIN, ui.Border.ROUNDED
 	type = ui.Border.ROUNDED,
 })
+
+-- ## }}} full_border
+
+-- ## {{{ bunny
 
 local home = os.getenv("HOME")
 require("bunny"):setup({
@@ -37,28 +64,20 @@ require("bunny"):setup({
 	notify = true, -- notify after hopping, default is false
 	fuzzy_cmd = "sk", -- fuzzy searching command, default is fzf
 })
--- ~/.config/yazi/init.lua
-function Linemode:size_and_mtime()
-	local time = math.floor(self._file.cha.mtime or 0)
-	if time == 0 then
-		time = ""
-	elseif os.date("%Y", time) == os.date("%Y") then
-		time = os.date("%b %d %H:%M", time)
-	else
-		time = os.date("%b %d  %Y", time)
-	end
 
-	local size = self._file:size()
-	return string.format("%s %s", size and ya.readable_size(size) or "-", time)
-end
+-- ## }}} bunny
+
+-- ## {{{ copy-file-contents
+
 require("copy-file-contents"):setup({
 	append_char = "\n",
 	notification = true,
 })
-require("git"):setup()
--- if os.getenv("NVIM") then
--- 	require("hide-preview"):entry()
--- end
+
+-- ## }}} copy-file-contents
+
+-- ## {{{ restore
+
 require("restore"):setup({
 	-- Set the position for confirm and overwrite dialogs.
 	-- don't forget to set height: `h = xx`
@@ -78,7 +97,17 @@ require("restore"):setup({
 		list_item = { odd = "blue", even = "blue" },
 	},
 })
+
+-- ## }}} restore
+
+-- ## {{{ dual-pane
+
 -- require("dual-pane"):setup()
+
+-- ## }}} dual-pane
+
+-- ## {{{ yamb 书签插件
+
 -- You can configure your bookmarks by lua language
 local bookmarks = {}
 
@@ -104,9 +133,9 @@ table.insert(bookmarks, {
 })
 
 require("yamb"):setup({
-	-- Optional, the path ending with path seperator represents folder.
+	-- Optional, the path ending with path separator represents folder.
 	bookmarks = bookmarks,
-	-- Optional, recieve notification everytime you jump.
+	-- Optional, receive notification every time you jump.
 	jump_notify = true,
 	-- Optional, the cli of fzf.
 	cli = "fzf",
@@ -116,3 +145,5 @@ require("yamb"):setup({
 	path = (ya.target_family() == "windows" and os.getenv("APPDATA") .. "\\yazi\\config\\bookmark")
 		or (os.getenv("HOME") .. "/.config/yazi/bookmark"),
 })
+
+-- ## }}} yamb 书签插件
