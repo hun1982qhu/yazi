@@ -283,16 +283,12 @@ run = "plugin bunny"
 
 # }}} bunny.yazi
 
-# {{{ lazygit
+## {{{ lazygit
 
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*"
-run  = "git"
+[[manager.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "plugin lazygit"
+desc = "run lazygit"
 
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*/"
-run  = "git"
+## }}} lazygit
 
-# }}} lazygit
