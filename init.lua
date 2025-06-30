@@ -100,12 +100,6 @@ require("restore"):setup({
 
 -- ## }}} restore
 
--- ## {{{ dual-pane
-
--- require("dual-pane"):setup()
-
--- ## }}} dual-pane
-
 -- ## {{{ yamb 书签插件
 
 -- You can configure your bookmarks by lua language
