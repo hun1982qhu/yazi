@@ -141,3 +141,9 @@ require("yamb"):setup({
 })
 
 -- ## }}} yamb 书签插件
+
+-- ## {{{ dedukun/relative-motions
+
+require("relative-motions"):setup({ show_numbers = "relative", show_motion = true, enter_mode = "first" })
+
+-- ## }}} dedukun/relative-motions

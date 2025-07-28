@@ -194,12 +194,11 @@ previewers = [
 	# Fallback
 	{ name = "*", run = "file" },
 ]
-# prepend_previewers = [
-#   { name = "*.md", run = "glow" },
-# ]
-# prepend_previewers = [
-#   { name = "*.md", run = "mdcat" },
-# ]
+
+prepend_previewers = [
+  { name = "*.ipynb", run  = 'piper -- nbpreview --no-paging --nerd-font --decorated --no-files --unicode --color --images --color-system=standard --theme=ansi_dark "$1"' },
+]
+
 [input]
 cursor_blink = false
 
