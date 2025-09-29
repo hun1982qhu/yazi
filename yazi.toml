@@ -80,6 +80,7 @@ player_video_default_linux = [
 rules = [
   # Python
   { name = "*.py", use = [ "edit", "reveal" ] },
+  { name = "*.md", use = [ "edit", "reveal" ] },
 
   # C/C++
   { name = "*.c", use = [ "edit", "reveal" ] },

@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "fdcf373"
-hash = "bd1737dd44b202f412122e6a3b378d4c"
+rev = "843c3fa"
+hash = "b4040931f0d2f9670ddb4923e55cd881"
 
 [[plugin.deps]]
 use = "Ape/open-with-cmd"
@@ -10,23 +10,23 @@ hash = "86e0312b01bc5762813c6c1d0517f073"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "55bf699"
-hash = "1f3dad061209081a6b04dd6ff2cb06c7"
+rev = "e95c7b3"
+hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "stelcodes/bunny"
-rev = "ea27f37"
-hash = "7956295208401cdbdf2b673b73437edd"
+rev = "bd8a767"
+hash = "5dded0f0f40142f99dda23aedd76b2bf"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "55bf699"
-hash = "2f1053f89d1a301a648ab181d0948e38"
+rev = "e95c7b3"
+hash = "1adc12c2b2b025411ab61eb8f0879574"
 
 [[plugin.deps]]
 use = "Reledia/glow"
-rev = "2da96e3"
-hash = "f9ee1436e3b853508d87f7d49dce56e6"
+rev = "bd3eaa5"
+hash = "92b5c58159a51c567f82b618cee2b78"
 
 [[plugin.deps]]
 use = "GrzegorzKozub/mdcat"
@@ -34,24 +34,29 @@ rev = "7b7380a"
 hash = "40c20e6c1085d1f45309b9f148bf4f6e"
 
 [[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "8f37dc5"
+hash = "ee71543790f0ce3951161045a3787abd"
+
+[[plugin.deps]]
 use = "AnirudhG07/plugins-yazi:copy-file-contents"
-rev = "524c52c"
-hash = "27c50e6bc15c09096505b805b238ade0"
+rev = "71545f4"
+hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
 
 [[plugin.deps]]
 use = "boydaihungst/restore"
-rev = "1bfd5f7"
-hash = "f61cea367316f9459590f5c1dc4fc"
+rev = "2a2ba2f"
+hash = "12d8576d0cb8355a7e15d622913eb250"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "e95c7b3"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "dedukun/bookmarks"
-rev = "fbb7c00"
-hash = "1d231a808d3344546380df33daf43e91"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:toggle-pane"
-rev = "55bf699"
-hash = "f3853bbdd1da2fad09d059ab5464abfd"
+rev = "9ef1254"
+hash = "92fbb5483657fa7976cdf4e0104e18e0"
 
 [[plugin.deps]]
 use = "h-hg/yamb"
@@ -59,9 +64,9 @@ rev = "22af003"
 hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
-use = "Lil-Dank/lazygit"
-rev = "7a08a09"
-hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
+use = "yazi-rs/plugins:toggle-pane"
+rev = "e95c7b3"
+hash = "d6f60c24d8c0cf57a855bf46115b2502"
 
 [[plugin.deps]]
 use = "AnirudhG07/nbpreview"
@@ -83,7 +88,5 @@ use = "GianniBYoung/rsync"
 rev = "55631aa"
 hash = "fb38b3c546e6594961b335cee4eaa340"
 
-[[flavor.deps]]
-use = "yazi-rs/flavors:catppuccin-frappe"
-rev = "02f3fc6"
-hash = "7780fbbc8965da5a31a76a0dcd4d1216"
+[flavor]
+deps = []
