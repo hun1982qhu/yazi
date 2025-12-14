@@ -683,3 +683,14 @@ desc = "Copy files using rsync"
 
 # }}} GianniBYoung/rsync -> simple rsync copying locally and up to remote servers
 
+# {{{ cd-git-root.yazi -> Changes directory to the root of the git repository you are currently in.
+#####################################################################
+
+# [[manager.prepend_keymap]]
+# on   = ["g", "r"]
+# run  = "plugin cd-git-root"
+# desc = "Go to git repo root"
+
+#####################################################################
+# }}} cd-git-root.yazi -> Changes directory to the root of the git repository you are currently in.
+
