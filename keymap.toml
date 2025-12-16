@@ -483,7 +483,7 @@ desc = "Delete all bookmarks"
 
 [[mgr.prepend_keymap]]
 on   = "o"
-run  = "plugin open-with-cmd block"
+run  = "plugin open-with-cmd --args=block"
 desc = "Open with command in the terminal"
 
 [[mgr.prepend_keymap]]
