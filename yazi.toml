@@ -1,6 +1,6 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
-"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+#:schema https://yazi-rs.github.io/schemas/yazi.json
 
 # {{{ manager
 
@@ -79,19 +79,19 @@ player_video_default_linux = [
 [open]
 rules = [
   # Python
-  { name = "*.py", use = [ "edit", "reveal" ] },
-  { name = "*.md", use = [ "edit", "reveal" ] },
+  { url = "*.py", use = [ "edit", "reveal" ] },
+  { url = "*.md", use = [ "edit", "reveal" ] },
 
   # C/C++
-  { name = "*.c", use = [ "edit", "reveal" ] },
-  { name = "*.cpp", use = [ "edit", "reveal" ] },
-  { name = "*.h", use = [ "edit", "reveal" ] },
-  { name = "*.hpp", use = [ "edit", "reveal" ] },
+  { url = "*.c", use = [ "edit", "reveal" ] },
+  { url = "*.cpp", use = [ "edit", "reveal" ] },
+  { url = "*.h", use = [ "edit", "reveal" ] },
+  { url = "*.hpp", use = [ "edit", "reveal" ] },
 
   # Lua
-  { name = "*.lua", use = [ "edit", "reveal" ] },
+  { url = "*.lua", use = [ "edit", "reveal" ] },
 	# Folder
-	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+	{ url = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
@@ -106,17 +106,17 @@ rules = [
 	# Empty file
 	{ mime = "inode/empty", use = [ "edit", "reveal" ] },
 	# Fallback
-	{ name = "*", use = [ "open", "reveal" ] },
+	{ url = "*", use = [ "open", "reveal" ] },
 ]
 
 prepend_rules = [
     # .mp4 和 .mkv 的 macOS 规则
-    { name = "*.mp4", use = "player_video_thunder_mac", for = "unix" },
-    { name = "*.mkv", use = "player_video_thunder_mac", for = "unix" },
+    { url = "*.mp4", use = "player_video_thunder_mac", for = "macos" },
+    { url = "*.mkv", use = "player_video_thunder_mac", for = "macos" },
 
     # .mp4 和 .mkv 的 Linux 规则（如果需要）
-    { name = "*.mp4", use = "player_video_default_linux", for = "unix" },
-    { name = "*.mkv", use = "player_video_default_linux", for = "unix" }
+    { url = "*.mp4", use = "player_video_default_linux", for = "linux" },
+    { url = "*.mkv", use = "player_video_default_linux", for = "linux" }
 ]
 # }}} open
 
@@ -136,68 +136,8 @@ suppress_preload = false
 
 [plugin]
 
-fetchers = [
-	# Mimetype
-	{ id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },
-]
-spotters = [
-	{ name = "*/", run = "folder" },
-	# Code
-	{ mime = "text/*", run = "code" },
-	{ mime = "*/{xml,javascript,wine-extension-ini}", run = "code" },
-	# Image
-	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-	{ mime = "image/*", run = "image" },
-	# Video
-	{ mime = "video/*", run = "video" },
-	# Fallback
-	{ name = "*", run = "file" },
-]
-preloaders = [
-	# Image
-	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-	{ mime = "image/*", run = "image" },
-	# Video
-	{ mime = "video/*", run = "video" },
-	# PDF
-	{ mime = "application/pdf", run = "pdf" },
-	# Font
-	{ mime = "font/*", run = "font" },
-	{ mime = "application/ms-opentype", run = "font" },
-]
-previewers = [
-	{ name = "*/", run = "folder", sync = true },
-	# Code
-	{ mime = "text/*", run = "code" },
-	{ mime = "*/{xml,javascript,wine-extension-ini}", run = "code" },
-	# JSON
-	{ mime = "application/{json,ndjson}", run = "json" },
-	# Image
-	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-	{ mime = "image/*", run = "image" },
-	# Video
-	{ mime = "video/*", run = "video" },
-	# PDF
-	{ mime = "application/pdf", run = "pdf" },
-	# Archive
-	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", run = "archive" },
-	{ mime = "application/{debian*-package,redhat-package-manager,rpm,android.package-archive}", run = "archive" },
-	{ name = "*.{AppImage,appimage}", run = "archive" },
-	# Virtual Disk / Disk Image
-	{ mime = "application/{iso9660-image,qemu-disk,ms-wim,apple-diskimage}", run = "archive" },
-	{ mime = "application/virtualbox-{vhd,vhdx}", run = "archive" },
-	{ name = "*.{img,fat,ext,ext2,ext3,ext4,squashfs,ntfs,hfs,hfsx}", run = "archive" },
-	# Font
-	{ mime = "font/*", run = "font" },
-	{ mime = "application/ms-opentype", run = "font" },
-	# Empty file
-	{ mime = "inode/empty", run = "empty" },
-	# Fallback
-	{ name = "*", run = "file" },
-]
-
 prepend_previewers = [
-  { name = "*.ipynb", run  = 'piper -- nbpreview --no-paging --nerd-font --decorated --no-files --unicode --color --images --color-system=standard --theme=ansi_dark "$1"' },
+  { url = "*.ipynb", run  = 'piper -- nbpreview --no-paging --nerd-font --decorated --no-files --unicode --color --images --color-system=standard --theme=ansi_dark "$1"' },
 ]
 
 [input]
@@ -291,4 +231,3 @@ run  = "plugin lazygit"
 desc = "run lazygit"
 
 ## }}} lazygit
-
