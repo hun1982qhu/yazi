@@ -37,8 +37,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	# Yazi 26 使用 %s 传递全部选中文件；旧的 "$@" 会导致 Neovim 收不到文件路径。
-	{ run = '${EDITOR:-nvim} %s', desc = "$EDITOR", block = true, for = "unix" },
+	{ run = '${EDITOR:-nvim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
 	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
 ]
