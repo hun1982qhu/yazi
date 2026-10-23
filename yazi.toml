@@ -137,6 +137,10 @@ suppress_preload = false
 
 [plugin]
 
+prepend_preloaders = [
+  { url = "*/", run = "dir-size", prio = "low" },
+]
+
 prepend_previewers = [
   { url = "*.ipynb", run  = 'piper -- nbpreview --no-paging --nerd-font --decorated --no-files --unicode --color --images --color-system=standard --theme=ansi_dark "$1"' },
 ]
