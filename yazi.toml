@@ -6,7 +6,7 @@
 
 [mgr]
 ratio          = [ 2, 4, 3 ]
-sort_by        = "size"
+sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_dir_first = true
